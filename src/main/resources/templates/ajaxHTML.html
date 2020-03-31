@@ -11,7 +11,7 @@
                 var uuid = $('#input_uuid').val();
                 $.ajax({
                     sync: true,
-                    url: '/testWait',
+                    url: '/sso/testWait',
                     type: 'post',
                     data:{'uuid':uuid},
                     success: function (data) {
@@ -27,7 +27,7 @@
                 var uuid = $('#input_uuid').val();
                 $.ajax({
                     sync: true,
-                    url: '/open',
+                    url: '/sso/open',
                     type: 'post',
                     data:{'uuid':uuid},
                     success: function (data) {
